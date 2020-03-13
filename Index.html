@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <title>Javascript Quiz</title>
 </head>
 <body>
-    <div class="navish ">
-        <h2 class="ilovepink" id="highscores">View Highscores</h2>
-        <h2 class="ilovepink" id="timerName">Timer : <span id="time">0</span></h2>
+    <div>
+        <ul class="navish">
+            <li> <h2 class="ilovepink" id="highscoresBtn">View Highscores</h2> </li>
+            <li> <h2 class="ilovepink" id="timerName">Timer : <span id="time">0<span></h2> </li>
+        </ul>
     </div>
     <div id="mainCon">
         <h1 class="ilovepink" id="theHeader">Javascript Code Quiz</h1>
@@ -24,6 +26,16 @@
         </ul>
         <span id="wrongo"></span>
     </div>
+
+
+    <div id="highscoresModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p> regular not all time highscores</p>
+          <p id="highscores"> im going to bed </p>
+        </div>
+      
+      </div>
     <script src="script.js"></script>
 </body>
 </html>
