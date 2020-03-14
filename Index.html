@@ -7,16 +7,18 @@
     <title>Javascript Quiz</title>
 </head>
 <body>
-    <div>
+    <nav>
         <ul class="navish">
             <li> <h2 class="ilovepink" id="highscoresBtn">View Highscores</h2> </li>
             <li> <h2 class="ilovepink" id="timerName">Timer : <span id="time">0<span></h2> </li>
         </ul>
-    </div>
-    <div id="mainCon">
+    </nav>
+    <main id="mainCon">
         <h1 class="ilovepink" id="theHeader">Javascript Code Quiz</h1>
-        <p id="theContent">How is this quiz going to work you ask? who knows at this point. The questions will pop up one by one automatically, but only move on to the next question if you got the question correct. If not like a wrong error code or you suck sound. The timer will start at X seconds and count down, and your high score will be saved locally based on your input/initials. When you click the view highscores up at the top we want a modal type thing to fill the screen. </p>
+        <p id="theContent">How is this quiz going to work you ask? who knows at this point. The questions will pop up one by one automatically. Ill put some real stuff here later </p>
         <button id="start">Start Quiz!</button>
+
+
         <h2 id="question"></h2>
         <ul id="answerOpts">
             <li><button class="optionButt" id="opt1"></button></li>
@@ -25,17 +27,27 @@
             <li><button class="optionButt" id="opt4"></button></li>
         </ul>
         <span id="wrongo"></span>
-    </div>
 
+
+        <div id="saveScoreForm">
+            <input placeholder="name" id="name" />
+            <button id="addbtn">Submit</button>
+         </div>
+
+
+    </main>
 
     <div id="highscoresModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <p> regular not all time highscores</p>
-          <p id="highscores"> im going to bed </p>
+          <ul id="highscores">
+              <li></li>
+          </ul>
         </div>
-      
       </div>
+
+     
     <script src="script.js"></script>
 </body>
 </html>
