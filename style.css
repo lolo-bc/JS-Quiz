@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(226, 226, 226);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(247, 247, 248);
+    font-family: 'Inter', sans-serif;
 }
 .ilovepink {
-    color: rgb(231, 102, 177);
+    color: rgb(201, 56, 140);
 }
 
 h2 {
@@ -32,7 +32,6 @@ li {
     cursor: pointer;
     float: left;
     overflow: auto;
-
 }
 
 
@@ -40,10 +39,9 @@ li {
     padding: 2em;
     margin: auto;
     text-align: center;
-    width: 500px;
-    height: auto;
-    min-height: 350px;
-    background-color: white;
+    width: 600px;
+    height: auto;  
+    min-height: 100vh;  
     clear: both;
 
 
@@ -59,10 +57,11 @@ li {
 
 #start {
     font-size: 20px;
-    background-color: rgb(231, 102, 177);
-    padding: 10px;
-    color: white;
-    text-decoration: wavy;
+    background-color: rgb(201, 56, 140);
+    padding: 13px;
+    margin: 30px;
+    color: rgb(247, 247, 248);
+    border-radius: 8px;    
 }
 
 #saveScoreForm {
@@ -75,41 +74,26 @@ li {
     list-style-type: none;
 }
 
-#opt1 {
+.optionButt {
     padding: 10px;
-    background-color: rgb(231, 102, 177);
-    color: white;
-    font-size: 1em;
+    background-color: rgb(247, 247, 248);
+    color: rgb(201, 56, 140);
+    font-size: 20px;
     margin: 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    
 }
 
-#opt2 {
-    padding: 10px;
-    background-color: rgb(231, 102, 177);
-    color: white;
-    font-size: 1em;
-    margin: 5px;
-}
-
-#opt3 {
-    padding: 10px;
-    background-color: rgb(231, 102, 177);
-    color: white;
-    font-size: 1em;
-    margin: 5px;
-}
-
-#opt4 {
-    padding: 10px;
-    background-color: rgb(231, 102, 177);
-    color: white;
-    font-size: 1em;
-    margin: 5px;
-}
 
 #question {
     display: none;   
     padding-bottom: 10px;
+    font-size: 30px;
 }
 
 #wrongo {
@@ -117,13 +101,26 @@ li {
 }
 
 #highscores {
-  text-align: center;
+  text-align: left;
   display: inline;
 }
 
 #timerName {
   text-align: right;
   display: inline;
+}
+
+#name {
+    width: 60%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#addbtn {
+    font-size: 20px;
+    background-color: rgb(201, 56, 140);
+    padding: 10px;
+    color: rgb(247, 247, 248);
 }
 
 
@@ -143,10 +140,10 @@ li {
 
   
   .modal-content {
-    background-color: rgb(231, 102, 177);
-    font-weight: bolder;
-    font-size: 30px;
-    color: white;
+    background-color: rgb(201, 56, 140);
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(247, 247, 248);
     margin: auto;
     padding: 20px;
     width: 40%;
@@ -167,4 +164,30 @@ li {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  #highscoresLabel {
+      font-size: 30px;
+  }
+  #clearScores {
+    font-size: 20px;
+    background-color: rgb(247, 247, 248);
+    color: rgb(201, 56, 140);
+    padding: 10px;
+    margin-top: 150px;
+    border-radius: 8px;
+  }
+
+
+  .footer {
+    height: 50px;
+    margin-top: -200px;
+    position: sticky;
+    text-align: center;
+    display: none;
+  }
+
+  #footerText {
+    border: none;
+    background-color: rgb(247, 247, 248);
   }

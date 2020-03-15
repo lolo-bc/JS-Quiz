@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
     <title>Javascript Quiz</title>
 </head>
 <body>
+    <!-- top of page displaying highscores button and timer -->
     <nav>
         <ul class="navish">
             <li> <h2 class="ilovepink" id="highscoresBtn">View Highscores</h2> </li>
             <li> <h2 class="ilovepink" id="timerName">Timer : <span id="time">0<span></h2> </li>
         </ul>
     </nav>
+
+    <!-- container for information, shown at page load -->
     <main id="mainCon">
         <h1 class="ilovepink" id="theHeader">Javascript Code Quiz</h1>
-        <p id="theContent">How is this quiz going to work you ask? who knows at this point. The questions will pop up one by one automatically. Ill put some real stuff here later </p>
+        <p id="theContent"> Welcome to the Javascript Quiz, where you can test your knowledge of JS! You have 75 seconds to answer all 10 questions, and the time you have left when you've answered all the questions correctly will be saved as your final score. Be aware!! Wrong answers will cost you an additional second. Hit the 'Start Quiz' button to  start the timer. Good luck!</p>
         <button id="start">Start Quiz!</button>
 
-
+        <!-- empty elements to hold questions and answers after quiz begins -->
         <h2 id="question"></h2>
         <ul id="answerOpts">
             <li><button class="optionButt" id="opt1"></button></li>
@@ -26,9 +30,11 @@
             <li><button class="optionButt" id="opt3"></button></li>
             <li><button class="optionButt" id="opt4"></button></li>
         </ul>
+
+        <!-- only popsup when user clicks wrong answer  -->
         <span id="wrongo"></span>
 
-
+        <!-- form for submitting name and score, displayed at the end of the quiz -->
         <div id="saveScoreForm">
             <input placeholder="name" id="name" />
             <button id="addbtn">Submit</button>
@@ -37,16 +43,21 @@
 
     </main>
 
+    <!-- Highscores, modal that only pops up when clicked -->
     <div id="highscoresModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <p> regular not all time highscores</p>
+          <p id="highscoresLabel">Highscores</p>
           <ul id="highscores">
-              <li></li>
           </ul>
+          <p><button id="clearScores">Clear Scores</button></p>
         </div>
       </div>
 
+      <!-- option to reload page, only appears once quiz has started  -->
+      <footer class="footer" id="footer">
+        <button id="footerText" onClick="window.location.reload();">Restart Quiz?</button>
+      </footer>
      
     <script src="script.js"></script>
 </body>
